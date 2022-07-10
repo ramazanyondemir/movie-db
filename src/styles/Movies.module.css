@@ -1,0 +1,13 @@
+.movies {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  background-color: #1b2430;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 15px auto;
+  gap: 20px;
+  box-shadow: 0 2px 7px #000;
+  -webkit-box-shadow: 0 2px 7px black;
+  -moz-box-shadow: 0 2px 7px black;
+}

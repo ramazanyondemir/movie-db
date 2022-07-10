@@ -1,0 +1,10 @@
+.detailContainer {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #1b2430;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 2px 7px #000;
+  -webkit-box-shadow: 0 2px 7px black;
+  -moz-box-shadow: 0 2px 7px black;
+}

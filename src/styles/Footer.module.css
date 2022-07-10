@@ -1,0 +1,11 @@
+.footer {
+  width: 1200px;
+  background-color: #1b2430;
+  height: 80px;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 7px 7px 0 0;
+  box-shadow: 0 2px 7px black;
+  -webkit-box-shadow: 0 2px 7px black;
+  -moz-box-shadow: 0 2px 7px black;
+}

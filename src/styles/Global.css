@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: #d6d5a8;
+}
+html {
+  min-width: 100%;
+  min-height: 100%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #272f37;
+  /* background-image: url(../assets/topography.svg); */
+}
+
+.nav {
+  display: flex;
+  width: 1200px;
+  align-items: center;
+  padding: 30px;
+  margin: 0 auto 15px;
+  gap: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #1b2430;
+  box-shadow: 0 2px 7px black;
+  -webkit-box-shadow: 0 2px 7px black;
+  -moz-box-shadow: 0 2px 7px black;
+}
+.active {
+  font-weight: bold;
+  color: #e9e877;
+}
