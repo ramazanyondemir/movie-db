@@ -6,7 +6,7 @@
 }
 a {
   text-decoration: none;
-  color: #d6d5a8;
+  color: #ddd;
 }
 html {
   min-width: 100%;
@@ -39,4 +39,30 @@ body {
 .active {
   font-weight: bold;
   color: #e9e877;
+}
+
+@media only screen and (min-width: 1450px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    padding: 0 10px;
+  }
+  .nav {
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+  .nav a {
+    margin-right: 10px;
+  }
+  .nav a:last-child {
+    margin-right: 0;
+  }
 }

@@ -9,3 +9,13 @@
   -webkit-box-shadow: 0 2px 7px black;
   -moz-box-shadow: 0 2px 7px black;
 }
+
+@media only screen and (max-width: 375px) {
+  .footer {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+}

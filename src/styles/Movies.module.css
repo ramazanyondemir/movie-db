@@ -11,3 +11,20 @@
   -webkit-box-shadow: 0 2px 7px black;
   -moz-box-shadow: 0 2px 7px black;
 }
+
+@media only screen and (min-width: 1450px) {
+  .movies {
+    width: 1600px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .movies {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+}

@@ -56,3 +56,9 @@
 .prev:hover {
   transform: scale(1.2);
 }
+
+@media only screen and (max-width: 375px) {
+  .sliderContainer {
+    display: none;
+  }
+}

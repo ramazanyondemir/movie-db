@@ -2,8 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { Card } from './Card';
 import ScrollContainer from 'react-indiana-drag-scroll';
-import { useContextValue } from '../context/MainContext';
-import styles from '../styles/Slider.module.css';
+import { useContextValue } from 'context/MainContext';
+import styles from 'styles/Slider.module.css';
 
 export const Slider = () => {
   const { movies } = useContextValue();
