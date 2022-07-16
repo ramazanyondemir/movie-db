@@ -1,6 +1,5 @@
 import React from 'react';
 import { Slider } from 'components/Slider';
-import { Footer } from 'components/Footer';
 import { Movies } from 'components/Movies';
 
 export const MovieLayout = () => {
@@ -8,7 +7,6 @@ export const MovieLayout = () => {
     <div>
       <Slider />
       <Movies />
-      <Footer />
     </div>
   );
 };
