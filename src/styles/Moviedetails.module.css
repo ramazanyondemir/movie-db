@@ -10,6 +10,7 @@
 /* movie detay ana kapsayıcı */
 .movie {
   display: flex;
+  padding: 20px;
 }
 
 .movieDetail {
@@ -32,7 +33,9 @@
   text-align: center;
   background-color: darkred;
   color: #e9ff10;
+  cursor: pointer;
 }
+
 .genre:last-child {
   margin-right: 0;
 }
@@ -43,6 +46,7 @@
   border: none;
   width: 100px;
   padding: 6px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .backBtn a {
@@ -91,12 +95,12 @@
   right: 3px;
   color: #e9cd70;
   background-color: #000;
+  box-shadow: inset 3px 3px 3px #ddd;
   z-index: 9999;
 }
 
 .line {
   width: 100%;
-  margin: 20px 0 20px;
   height: 1px;
   background-color: gray;
 }
@@ -108,32 +112,50 @@
   flex-wrap: wrap;
 }
 .castPosterWrapper {
+  display: flex;
+  flex-direction: column;
   width: calc((100% - 80px) / 5);
-  height: 300px;
   position: relative;
   flex-shrink: 0;
-  margin: 20px 20px 40px 0;
+  margin: 20px 20px 20px 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+.castPosterWrapper:hover > .castPoster {
+  transform: scale(1.1);
 }
 .castPoster {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 300ms transform;
+}
+
+.castDetail {
+  display: flex;
+  min-height: 60px;
+  flex-direction: column;
 }
 
 .name,
 .character {
-  padding: 2px;
+  padding: 0 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  z-index: 999;
 }
 
 .name {
   color: #000;
+  flex: 1;
   background-color: #e9cd70;
 }
 .character {
-  color: #fff;
+  color: #ddd;
   border: 1px solid #e9cd70;
-  border-top: none;
+  min-height: 40px;
 }
 
 /* gereksiz marginleri silmek için */

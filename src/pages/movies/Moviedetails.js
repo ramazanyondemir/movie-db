@@ -80,8 +80,12 @@ export const Moviedetails = () => {
                     src={castProfileImgPath(p)}
                     className={styles.castPoster}
                   />
-                  <h4 className={styles.name}>{p.name}</h4>
-                  <h5 className={styles.character}>{p.character}</h5>
+                  <div className={styles.castDetail}>
+                    <h4 className={styles.name}>{p.name}</h4>
+                    {p.character && (
+                      <h5 className={styles.character}>{p.character}</h5>
+                    )}
+                  </div>
                 </div>
               ))}
           </div>
