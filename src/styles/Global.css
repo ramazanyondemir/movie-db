@@ -46,6 +46,9 @@ body {
   body {
     font-size: 20px;
   }
+  .nav {
+    width: 1600px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
