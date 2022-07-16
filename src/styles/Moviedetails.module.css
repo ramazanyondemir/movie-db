@@ -1,10 +1,142 @@
-.detailContainer {
+.container {
   width: 1200px;
   margin: 0 auto;
   background-color: #1b2430;
   padding: 20px;
-  gap: 20px;
   box-shadow: 0 2px 7px #000;
-  -webkit-box-shadow: 0 2px 7px black;
-  -moz-box-shadow: 0 2px 7px black;
+  -webkit-box-shadow: 0 2px 7px #000;
+  -moz-box-shadow: 0 2px 7px #000;
+}
+/* movie detay ana kapsayıcı */
+.movie {
+  display: flex;
+}
+
+.movieDetail {
+  margin-left: 20px;
+  width: calc(100% - 270px); /* margin + img */
+}
+
+.detailHeader {
+}
+
+.movieTitle {
+  font-size: 30px;
+  color: #fff;
+}
+
+.genre {
+  display: inline-block;
+  margin: 5px 5px 15px 0;
+  padding: 4px;
+  text-align: center;
+  background-color: darkred;
+  color: #e9ff10;
+}
+.genre:last-child {
+  margin-right: 0;
+}
+
+/* Geri buttonu */
+.backBtn {
+  background-color: darkred;
+  border: none;
+  width: 100px;
+  padding: 6px;
+  text-align: center;
+}
+.backBtn a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.movieOverview {
+  color: #ddd;
+}
+
+/* detay header */
+.movieHeader {
+  display: flex;
+  margin: 10px 0;
+  padding: 15px 0;
+  justify-content: space-between;
+}
+
+/* poster */
+.posterWrapper {
+  position: relative;
+  width: 250px;
+  padding-top: 30%;
+  box-shadow: 0 2px 7px #000;
+  -webkit-box-shadow: 0 2px 7px #000;
+  -moz-box-shadow: 0 2px 7px #000;
+}
+
+.poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vote {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  padding: 4px;
+  min-width: 40px;
+  top: 3px;
+  right: 3px;
+  color: #e9cd70;
+  background-color: #000;
+  z-index: 9999;
+}
+
+.line {
+  width: 100%;
+  margin: 20px 0 20px;
+  height: 1px;
+  background-color: gray;
+}
+
+/* cast */
+
+.cast {
+  display: flex;
+  flex-wrap: wrap;
+}
+.castPosterWrapper {
+  width: calc((100% - 80px) / 5);
+  height: 300px;
+  position: relative;
+  flex-shrink: 0;
+  margin: 20px 20px 40px 0;
+}
+.castPoster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name,
+.character {
+  padding: 2px;
+  text-align: center;
+}
+
+.name {
+  color: #000;
+  background-color: #e9cd70;
+}
+.character {
+  color: #fff;
+  border: 1px solid #e9cd70;
+  border-top: none;
+}
+
+/* gereksiz marginleri silmek için */
+.castPosterWrapper:nth-child(5n) {
+  margin-right: 0;
 }

@@ -23,6 +23,7 @@ const MainProvider = ({ children }) => {
       .then(response => response.json())
       .then(data => {
         setDiscoverMovies(data.results);
+        console.log(data);
       });
   }, []);
 

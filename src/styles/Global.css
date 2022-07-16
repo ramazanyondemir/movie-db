@@ -6,7 +6,6 @@
 }
 a {
   text-decoration: none;
-  color: #ddd;
 }
 html {
   min-width: 100%;
@@ -19,7 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #272f37;
-  /* background-image: url(../assets/topography.svg); */
+  background-image: url(../assets/topography.svg);
 }
 
 .nav {
@@ -30,13 +29,15 @@ body {
   margin: 0 auto 15px;
   gap: 10px;
   font-size: 20px;
-  color: white;
   background-color: #1b2430;
   box-shadow: 0 2px 7px black;
   -webkit-box-shadow: 0 2px 7px black;
   -moz-box-shadow: 0 2px 7px black;
 }
-.active {
+.nav a {
+  color: #fff;
+}
+.nav a.active {
   font-weight: bold;
   color: #e9e877;
 }
