@@ -36,7 +36,7 @@ export const Moviedetails = () => {
       {movie && (
         <>
           <div className={styles.backBtn}>
-            <Link to={-1}>GO BACK</Link>
+            <Link to={'/'}>GO BACK</Link>
           </div>
 
           {/* line */}
