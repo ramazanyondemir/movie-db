@@ -7,6 +7,19 @@
   -webkit-box-shadow: 0 2px 7px #000;
   -moz-box-shadow: 0 2px 7px #000;
 }
+/* Geri buttonu */
+.backBtn {
+  background-color: darkred;
+  border: none;
+  width: 100px;
+  padding: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.backBtn a {
+  color: #fff;
+  font-weight: 700;
+}
 /* movie detay ana kapsayıcı */
 .movie {
   display: flex;
@@ -28,7 +41,7 @@
 
 .genre {
   display: inline-block;
-  margin: 5px 5px 15px 0;
+  margin: 5px 5px 5px 0;
   padding: 4px;
   text-align: center;
   background-color: darkred;
@@ -38,20 +51,6 @@
 
 .genre:last-child {
   margin-right: 0;
-}
-
-/* Geri buttonu */
-.backBtn {
-  background-color: darkred;
-  border: none;
-  width: 100px;
-  padding: 6px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.backBtn a {
-  color: #fff;
-  font-weight: 700;
 }
 
 .movieOverview {
@@ -160,4 +159,50 @@
 /* gereksiz marginleri silmek için */
 .castPosterWrapper:nth-child(5n) {
   margin-right: 0;
+}
+
+@media only screen and (min-width: 1450px) {
+  .container {
+    width: 1600px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  body {
+    background-image: none;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+
+  /* movie */
+  .movie {
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+  .posterWrapper {
+    width: 70%;
+    padding-top: 100%;
+    margin: 20px 0;
+  }
+  .movieDetail {
+    margin: 0;
+    width: 100%;
+  }
+  /* cast */
+  .cast {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .castPosterWrapper {
+    margin: 15px 0;
+    width: 90%;
+  }
 }

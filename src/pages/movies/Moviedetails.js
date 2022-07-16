@@ -44,10 +44,7 @@ export const Moviedetails = () => {
           <div className={styles.line}></div>
 
           <div className={styles.movie}>
-            <div
-              onClick={() => console.log(cast)}
-              className={styles.posterWrapper}
-            >
+            <div className={styles.posterWrapper}>
               <span className={styles.vote}>
                 <h3>{movie.vote_average}</h3>
               </span>
