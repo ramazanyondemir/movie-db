@@ -10,17 +10,23 @@ export const Moviedetails = () => {
   const { BASE_IMG_URL, API_KEY } = useContextValue();
 
   useEffect(() => {
-    fetch(
-      `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`
-    )
-      .then(res => res?.json())
-      .then(data => setMovie(data));
-
-    fetch(
-      `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${API_KEY}&language=en-US`
-    )
-      .then(res => res?.json())
-      .then(data => setCast(data.cast));
+    // fetch -> movie
+    (async () => {
+      const response = await fetch(
+        `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`
+      );
+      const data = await response.json();
+      setMovie(data);
+    })();
+    // fetch -> cast & crew
+    (async () => {
+      const response = await fetch(
+        `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${API_KEY}&language=en-US`
+      );
+      const data = await response.json();
+      console.log(data);
+      setCast(data.cast);
+    })();
   }, []);
 
   const castProfileImgPath = cast => {
